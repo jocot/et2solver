@@ -2,7 +2,7 @@ ET2Solver - Eternity 2 Puzzle Solver
 Author: Joe Cotroneo
 Created: 2009-2010
 
-License: Free for personal use
+License: Apache 2.0
 Warranties: None
 
 Status
