@@ -1,0 +1,12 @@
+-EFE
+-EGA
+-EGB
+-EIA
+-END
+-EPD
+-EPE
+-ESC
+-ETA
+-ETE
+-EUB
+-EVC

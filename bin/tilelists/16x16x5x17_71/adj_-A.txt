@@ -1,0 +1,11 @@
+-APD
+-AUC
+-AIB
+-ANC
+-AGB
+-AMB
+-AUB
+-AVB
+-AVA
+-ASA
+-AVD

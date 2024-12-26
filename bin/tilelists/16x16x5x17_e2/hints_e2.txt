@@ -1,0 +1,15 @@
+# col,row,tileId,searchPattern
+# I8
+8,9,139,LHII
+
+# C3 - Clue 4
+3,3,208,MVKL
+
+# N3 - Clue 1
+14,3,255,TVRV
+
+# C14 - Clue 2
+3,14,181,LTIU
+
+# N14 - Clue 3
+14,14,249,QPUO

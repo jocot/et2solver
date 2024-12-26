@@ -1,0 +1,142 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{AEDB5299-71E0-469D-90DA-6F0B229055E7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ET2Solver</RootNamespace>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\Joe\Application Data\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AssemblyName>ET2Solver-debug</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+    <AssemblyName>ET2Solver</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\et2\Utils.cs">
+      <Link>Utils.cs</Link>
+    </Compile>
+    <Compile Include="AppFlowLog.cs" />
+    <Compile Include="Board.cs" />
+    <Compile Include="BoardDesigner.cs" />
+    <Compile Include="CellRegion.cs" />
+    <Compile Include="includes\CAF_Application.cs" />
+    <Compile Include="includes\CAF_Config.cs" />
+    <Compile Include="includes\CAF_Log.cs" />
+    <Compile Include="includes\CAF_Stats.cs" />
+    <Compile Include="Numerology.cs" />
+    <Compile Include="PathBuilder.cs" />
+    <Compile Include="PatternStats.cs" />
+    <Compile Include="RandomBoard.cs" />
+    <Compile Include="Solver.cs" />
+    <Compile Include="Solver2x2.cs" />
+    <Compile Include="Solver3.cs" />
+    <Compile Include="SpeedTimer.cs" />
+    <Compile Include="TileInfo.cs" />
+    <Compile Include="TileQueue.cs" />
+    <Compile Include="TileSearch.cs" />
+    <Compile Include="TileSelector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TileSelector.Designer.cs">
+      <DependentUpon>TileSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TileSwap.cs" />
+    <Compile Include="Solution.cs" />
+    <Compile Include="TileSwapUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TileSwapUI.Designer.cs">
+      <DependentUpon>TileSwapUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timer.cs" />
+    <Compile Include="TileGraphics.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TileOverlay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TileOverlay.Designer.cs">
+      <DependentUpon>TileOverlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitTest.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TileSelector.resx">
+      <DependentUpon>TileSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TileSwapUI.resx">
+      <DependentUpon>TileSwapUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="ET2Solver.cd" />
+    <Content Include="ProfilingSessions\Session20100527_225404.sdps" />
+    <Content Include="ProfilingSessions\Session20100613_173543.sdps" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+</Project>

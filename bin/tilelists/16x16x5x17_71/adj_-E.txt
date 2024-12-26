@@ -1,0 +1,10 @@
+-EUC
+-EKD
+-EPE
+-ESA
+-EMA
+-EOC
+-EFE
+-EKE
+-EQA
+-EVC

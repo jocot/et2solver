@@ -1,0 +1,4 @@
+bin/config/defaults.txt
+bin/logs
+bin/stats
+obj/

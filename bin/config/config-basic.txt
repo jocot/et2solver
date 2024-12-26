@@ -1,0 +1,11 @@
+; after making changes save or set config
+; reload tileset if imageset has been changed
+
+; use default / official E2 tile images
+imageset = 0
+
+; to use solid colors for tile images
+;imageset = 1
+
+on_solve = next_iteration
+reset_tilestats_each_iteration = 0
