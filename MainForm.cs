@@ -79,6 +79,9 @@ namespace ET2Solver
 
 		private void loadConfig()
 		{
+            System.IO.Directory.CreateDirectory("logs");
+            System.IO.Directory.CreateDirectory("stats");
+
 			// load default configuration (if set)
 			CAF_Application.config.loadDefaults();
 
